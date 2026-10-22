@@ -1,0 +1,90 @@
+{
+    "resources": [
+        {
+            "name": "resources.json",
+            "merged": true
+        },
+        {
+            "name": "util/messages.js"
+        },
+        {
+            "name": "flp-config.json"
+        },
+        {
+            "name": "test/fioriSandbox.html"
+        },
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "localIndex.html"
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "view/Worklist.view.xml"
+        },
+        {
+            "name": "view/fragment/StorageLocationDialog.fragment.xml"
+        },
+        {
+            "name": "view/Worklist.controller.js"
+        },
+        {
+            "name": "view/Main.controller.js"
+        },
+        {
+            "name": "view/Main.view.xml"
+        },
+        {
+            "name": ".che/project.json"
+        },
+        {
+            "name": "i18n/messageBundle_pt.properties",
+            "raw": "messageBundle.properties"
+        },
+        {
+            "name": "i18n/messageBundle_en.properties",
+            "raw": "messageBundle.properties"
+        },
+        {
+            "name": "i18n/messageBundle_fr.properties",
+            "raw": "messageBundle.properties"
+        },
+        {
+            "name": "i18n/messageBundle_es.properties",
+            "raw": "messageBundle.properties"
+        },
+        {
+            "name": "i18n/messageBundle_de.properties",
+            "raw": "messageBundle.properties"
+        },
+        {
+            "name": "i18n/messageBundle.properties",
+            "raw": "messageBundle.properties"
+        },
+        {
+            "name": "css/fullScreenStyles.css"
+        },
+        {
+            "name": "dist/di.code-validation.core_issues.json"
+        },
+        {
+            "name": "model/metadata.xml"
+        },
+        {
+            "name": "index.html"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": ".user.project.json"
+        },
+        {
+            "name": ".project.json"
+        }
+    ]
+}

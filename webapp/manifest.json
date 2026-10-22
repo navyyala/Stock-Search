@@ -1,0 +1,105 @@
+{
+  "_version": "1.58.0",
+  "sap.app": {
+    "id": "PO_STOCK",
+    "type": "application",
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "applicationVersion": {
+      "version": "1.1.0"
+    },
+    "ach": "PM",
+    "resources": "resources.json",
+    "dataSources": {
+      "mainService": {
+        "uri": "/sap/opu/odata/sap/ZGPM_STOCK_SEARCH_SRV/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "2.0",
+          "localUri": "model/metadata.xml",
+          "annotations": []
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "sap-icon://approvals"
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    },
+    "supportedThemes": [
+      "sap_fiori_3",
+      "sap_fiori_3_dark",
+      "sap_high_contrast_black",
+      "sap_high_contrast_white"
+    ]
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "PO_STOCK.view.Main",
+      "type": "XML",
+      "id": "fioriContent"
+    },
+    "dependencies": {
+      "minUI5Version": "1.71.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.ui.layout": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "handleValidation": true,
+    "models": {
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "json": true,
+          "defaultBindingMode": "TwoWay",
+          "defaultCountMode": "Inline",
+          "useBatch": true
+        }
+      },
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "PO_STOCK.i18n.messageBundle",
+          "supportedLocales": ["", "en", "de", "es", "fr", "pt"],
+          "fallbackLocale": ""
+        }
+      }
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "PO_STOCK.view",
+        "controlId": "fioriContent",
+        "controlAggregation": "pages",
+        "clearTarget": false
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "main",
+          "target": "worklist"
+        }
+      ],
+      "targets": {
+        "worklist": {
+          "viewName": "Worklist",
+          "viewLevel": 1
+        }
+      }
+    }
+  }
+}

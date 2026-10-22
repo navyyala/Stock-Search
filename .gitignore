@@ -1,0 +1,18 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+
+# UI5 Tooling cache
+.ui5/
+
+# npm
+npm-debug.log*
+package-lock.json
+yarn.lock
+
+# VS Code (keep .vscode/settings.json and launch.json in repo)
+.vscode/*.log
+
+# SAP Fiori Tools
+.fioritools/

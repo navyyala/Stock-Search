@@ -1,0 +1,51 @@
+{
+  "dataBinding": {
+    "/view/Master.view.xml": {
+      "entitySet": ""
+    },
+    "/view/Details.view.xml": {
+      "entitySet": ""
+    }
+  },
+  "generation": [
+    {
+      "templateId": "ui5template.fioriFullScreen",
+      "templateVersion": "1.4.0",
+      "dateTimeStamp": "Mon, 26 Oct 2015 09:34:30 GMT"
+    },
+    {
+      "templateId": "servicecatalog.connectivityComponent",
+      "templateVersion": "0.0.0",
+      "dateTimeStamp": "Fri, 30 Nov 2018 09:10:12 GMT"
+    }
+  ],
+  "mockpreview": {
+    "mockUri": "/sap/opu/odata/sap/ZPM_CONFIRM_ORDER_V3_SRV",
+    "metadataFilePath": "model/metadata.xml",
+    "loadJSONFiles": false,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "en,fr,de",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
+  },
+  "projectType": [
+    "sap.watt.uitools.ide.fiori",
+    "com.watt.common.builder.sapui5clientbuild"
+  ],
+  "build": {
+    "buildRequired": true,
+    "lastBuildDateTime": "Fri, 10 Jul 2026 07:27:51 GMT"
+  },
+  "deploy": {
+    "destination": "GWQ",
+    "name": "ZGPM_STOCK"
+  },
+  "hybrid": {
+    "backendDestination": "GWD"
+  }
+}
